@@ -16,6 +16,7 @@ This is a basic react meteor setup <br/>
 `pirate arr`<br/>
 `pirate create <your project name>`<br/>
 `cd <your project name>`<br/>
+`meteor npm install --save react react-dom react-router` <br/>
 `meteor`<br/>
 
 ## Includes
