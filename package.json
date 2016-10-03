@@ -1,6 +1,6 @@
 {
   "name": "brms-pirate",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "This is a basic React Meteor setup package containing Bourbon, Neat, Bitters for sass and it has React, React Router, ReactDOM, Redux, and everything you need to start a react app in Meteor",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
