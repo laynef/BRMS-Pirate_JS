@@ -230,6 +230,27 @@
       "path": "packages/shell-server.js"
     },
     {
+      "path": "packages/fourseven_scss.js"
+    },
+    {
+      "path": "packages/wolves_bourbon.js"
+    },
+    {
+      "path": "packages/wolves_bitters.js"
+    },
+    {
+      "path": "packages/wolves_neat.js"
+    },
+    {
+      "sourceMap": "packages/reactive-dict.js.map",
+      "path": "packages/reactive-dict.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/kadira_flow-router/node_modules",
+      "sourceMap": "packages/kadira_flow-router.js.map",
+      "path": "packages/kadira_flow-router.js"
+    },
+    {
       "path": "packages/livedata.js"
     },
     {
@@ -255,11 +276,9 @@
       "path": "packages/reload.js"
     },
     {
-      "node_modules": "npm/node_modules",
       "path": "packages/global-imports.js"
     },
     {
-      "node_modules": "npm/node_modules",
       "path": "app/app.js"
     }
   ]

@@ -6,6 +6,7 @@ $ = Package.jquery.$;
 jQuery = Package.jquery.jQuery;
 Tracker = Package.tracker.Tracker;
 Deps = Package.tracker.Deps;
+FlowRouter = Package['kadira:flow-router'].FlowRouter;
 Meteor = Package.meteor.Meteor;
 global = Package.meteor.global;
 meteorEnv = Package.meteor.meteorEnv;
