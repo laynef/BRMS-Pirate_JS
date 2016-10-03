@@ -1,6 +1,6 @@
 {
-  "name": "brms",
-  "version": "0.0.5",
+  "name": "brms-pirate",
+  "version": "0.0.9",
   "description": "This is a basic React Meteor setup package containing Bourbon, Neat, Bitters for sass and it has React, React Router, ReactDOM, Redux, and everything you need to start a react app in Meteor",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/lfaler/BRMS.git"
   },
-  "author": "lfaler",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lfaler/BRMS/issues"
@@ -27,8 +26,9 @@
     "serve-static": "^1.11.1",
     "write": "^0.2.1"
   },
+  "author": "Layne Faler <laynefaler>",
   "preferGlobal": true,
   "bin": {
-    "pirate": "src/index.js"
+    "pirate": "./src/index.js"
   }
 }

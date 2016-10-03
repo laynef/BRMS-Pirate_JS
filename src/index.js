@@ -1,11 +1,3 @@
-/**
-* @Author: Layne Faler <laynefaler>
-* @Date:   10-03-2016
-* @Email:  laynefaler@gmail.com
-* @Last modified by:   laynefaler
-* @Last modified time: 10-03-2016
-*/
-
 #! /usr/bin/env node
 
 var CommandStrategy = require('./strategies/CommandStrategy');
