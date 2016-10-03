@@ -8,31 +8,20 @@
 
 # Basic React Meteor Setup (B.R.M.S.)
 
-This is a basic react meteor setup 
+This is a basic react meteor setup
 
 ## Installation
 
-`npm install -g brms-pirate`
-`pirate arr`
-`pirate create <your project name>`
-`cd <your project name>`
-`meteor`
+`npm install -g brms-pirate` <br/>
+`pirate arr`<br/>
+`pirate create <your project name>`<br/>
+`cd <your project name>`<br/>
+`meteor`<br/>
 
 ## Includes
 
 This includes basic react basics
---> React, ReactDOM, React Router, Redux, Flux
---> Bourbon, Neat, and Bitters for Sass
---> Ability to customize your own defaults
+--> React, ReactDOM, React Router, Redux, Flux <br/>
+--> Bourbon, Neat, and Bitters for Sass <br/>
 
-## Customize your own defaults
-
-`Fork lfaler/BRMS-Pirate_JS`
-`Download or clone`
-`cd <your-cloned/downloaded-directory>`
-`cd BRMS/design-me/project`
-`Open in your own text editor`
-`Set up your own defaults`
-`Save changes and push changes`
-
-Enjoy!
+Enjoy! <br/>
