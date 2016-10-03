@@ -1,8 +1,7 @@
 {
   "name": "brms",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is a basic React Meteor setup package containing Bourbon, Neat, Bitters for sass and it has React, React Router, ReactDOM, Redux, and everything you need to start a react app in Meteor",
-  "main": "./project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,8 +27,8 @@
     "handlebars": "^4.0.5",
     "minimatch": "^3.0.3",
     "read-file": "^0.2.0",
-    "recursive-copy": "^1.0.10",
-    "serve-static": "^1.10.0",
+    "recursive-copy": "^2.0.5",
+    "serve-static": "^1.11.1",
     "write": "^0.2.1"
   }
 }
