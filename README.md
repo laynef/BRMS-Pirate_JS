@@ -8,7 +8,7 @@
 
 # Basic React Meteor Setup (B.R.M.S.)
 
-This is a basic react meteor setup
+This is a basic react meteor setup <br/>
 
 ## Installation
 
@@ -20,7 +20,7 @@ This is a basic react meteor setup
 
 ## Includes
 
-This includes basic react basics
+This includes basic react basics <br/>
 --> React, ReactDOM, React Router, Redux, Flux <br/>
 --> Bourbon, Neat, and Bitters for Sass <br/>
 
