@@ -9,6 +9,7 @@
 import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, Link } from 'react-router';
 
 import Main from './js/Main.jsx';
 import './main.html';
