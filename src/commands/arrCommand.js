@@ -6,7 +6,7 @@
 * @Last modified time: 10-03-2016
 */
 
-var arrCommand = function () {
+var ArrCommand = function () {
   var handle = function () {
     console.log('bury yar gold');
   };
@@ -16,4 +16,4 @@ var arrCommand = function () {
   }
 };
 
-module.exports = arrCommand;
+module.exports = ArrCommand;

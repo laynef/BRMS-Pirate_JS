@@ -6,7 +6,7 @@
 * @Last modified time: 10-03-2016
 */
 
-var arrCommand = require('../commands/arrCommand');
+var ArrCommand = require('../commands/ArrCommand');
 var CreateCommand = require('../commands/CreateCommand');
 var MakeViewCommand = require('../commands/MakeViewCommand');
 var MakeCommandCommand = require('../commands/MakeCommandCommand');
@@ -37,7 +37,7 @@ var CommandStrategy = function(commandPattern, args, flags) {
   var execute = function () {
     switch (commandPattern) {
       case 'arr':
-        _commander(arrCommand);
+        _commander(ArrCommand);
         break;
       case 'db:seed':
         _commander(SeedDatabaseCommand);
