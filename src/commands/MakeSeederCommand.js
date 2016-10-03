@@ -13,7 +13,7 @@ var MakeSeederCommand = function () {
   var _nameDashed = MakeUtilities.camelToDash(_name);
 
   var _templatePath = function() {
-    return path.join(__dirname, '..', '..', 'scaffolding', 'templates', 'seed.js.handlebars');
+    return path.join(__dirname, '..', '..', 'design-me', 'templates', 'seed.js.handlebars');
   }
 
   var _createPath = function(workingDirectory) {

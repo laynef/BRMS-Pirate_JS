@@ -13,7 +13,7 @@ var MakeModelFactoryCommand = function () {
   var _nameDashed = MakeUtilities.camelToDash(_name);
 
   var _templatePath = function() {
-    return path.join(__dirname, '..', '..', 'scaffolding', 'templates', 'model-factory.js.handlebars');
+    return path.join(__dirname, '..', '..', 'design-me', 'templates', 'model-factory.js.handlebars');
   }
 
   var _createPath = function(workingDirectory) {

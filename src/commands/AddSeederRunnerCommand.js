@@ -6,7 +6,7 @@ var fs = require('fs');
 
 var AddMigrationRunnerCommand = function () {
   var _templatePath = function() {
-    return path.join(__dirname, '..', '..', 'scaffolding', 'templates', 'run-seeders.js.handlebars');
+    return path.join(__dirname, '..', '..', 'design-me', 'templates', 'run-seeders.js.handlebars');
   }
 
   var _createPath = function(workingDirectory) {

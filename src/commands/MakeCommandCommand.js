@@ -14,7 +14,7 @@ var MakeCommandCommand = function () {
   var _type = 'both'
 
   var _templatePath = function() {
-    return path.join(__dirname, '..', '..', 'scaffolding', 'templates', 'command.js.handlebars');
+    return path.join(__dirname, '..', '..', 'design-me', 'templates', 'command.js.handlebars');
   }
 
   var _createPath = function(workingDirectory) {

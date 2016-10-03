@@ -19,7 +19,7 @@ var CreateCommand = function (name) {
 
     console.log('Creating ' + name);
 
-    var src = path.join(__dirname, '..', '..', 'scaffolding', 'project');
+    var src = path.join(__dirname, '..', '..', 'design-me', 'project');
     var dest = path.join(workingDirectory, name);
 
     copy(src, dest, {
