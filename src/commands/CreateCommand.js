@@ -33,7 +33,7 @@ var CreateCommand = function (name) {
           console.info('Creation succeeded');
         }
       });
-    };
+    }
   }
 
 };

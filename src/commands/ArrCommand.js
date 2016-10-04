@@ -11,9 +11,9 @@ var ArrCommand = function () {
   return {
     task: function () {
       console.log('bury yar gold');
-    };
+    }
   }
-  
+
 };
 
 module.exports = ArrCommand;
