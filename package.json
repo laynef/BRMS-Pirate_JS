@@ -3,21 +3,20 @@
   "version": "0.2.0",
   "description": "This is a basic React Meteor setup package containing Bourbon, Neat, Bitters for sass and it has React, React Router, ReactDOM, Redux, and everything you need to start a react app in Meteor",
   "scripts": {
-    "start": "meteor run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lfaler/BRMS.git"
   },
-  "license": "ISC",
+  "keywords": [
+    "meteor"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lfaler/BRMS/issues"
   },
   "homepage": "https://github.com/lfaler/BRMS#readme",
-  "engines": {
-    "node": ">=4.4.7"
-  },
   "dependencies": {
     "connect": "^3.4.0",
     "handlebars": "^4.0.5",
@@ -37,6 +36,6 @@
   "author": "Layne Faler <laynefaler>",
   "preferGlobal": true,
   "bin": {
-    "pirate": "src/index.js"
+    "pirate": "./src/index.js"
   }
 }
