@@ -5,7 +5,7 @@ var CreateCommand = require('../commands/CreateCommand');
 var CommandStrategy = function(commandPattern, args, flags) {
   var _commander = function(klass) {
     var command = new klass(...args);
-    command.handle(flags);
+    command.task(flags);
   }
 
   var execute = function () {
