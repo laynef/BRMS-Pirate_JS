@@ -1,0 +1,19 @@
+{
+
+	"packages": {
+
+		"remove": [
+			"autopublish",
+			"insecure"
+		],
+
+		"add": [
+			"fourseven:scss",
+			"wolves:bourbon",
+			"wolves:bitters",
+			"wolves:neat",
+			"kadira:flow-router",
+			"practicalmeteor:mocha"
+		]
+	}
+}
