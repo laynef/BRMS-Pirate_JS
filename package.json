@@ -1,34 +1,32 @@
 {
   "name": "brms-pirate",
-  "version": "0.2.5",
-  "description": "This is a basic React Meteor setup package containing Bourbon, Neat, Bitters for sass and it has React, React Router, ReactDOM, Redux, and everything you need to start a react app in Meteor",
+  "version": "0.5.1",
+  "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lfaler/BRMS.git"
+    "url": "git+https://github.com/lfaler/BRMS-Pirate_JS.git"
   },
   "keywords": [
     "meteor"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lfaler/BRMS/issues"
-  },
-  "homepage": "https://github.com/lfaler/BRMS#readme",
-  "dependencies": {
-    "flux": "^3.0.0",
-    "meteor-node-stubs": "^0.2.3",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-router": "^2.8.1",
-    "recursive-copy": "^2.0.5",
-    "redux": "^3.6.0"
-  },
   "author": "Layne Faler <laynefaler>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfaler/BRMS-Pirate_JS/issues"
+  },
+  "homepage": "https://github.com/lfaler/BRMS-Pirate_JS#readme",
   "preferGlobal": true,
   "bin": {
-    "pirate": "./src/index.js"
+    "pirate": "./actions/index.js"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1"
   }
 }
