@@ -8,7 +8,7 @@
 
 var TextCommand = function() {
   var whatYoudSay = function() {
-    console.log("bury yar gold");
+    console.log("bury yar gold, drink yar rum");
   };
 
   return {
