@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+
+@import "{wolves:bourbon}/bourbon";
+@import "{wolves:neat}/neat";
+@import "{wolves:bitters}/base";
+
+
+// delete below
+body {
+  background-color: rgb(76, 153, 215);
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
