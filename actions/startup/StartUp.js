@@ -30,7 +30,7 @@ var StartUp = function(commandPattern, args, flags) {
   };
 
   return {
-    execute: execute;
+    execute: execute
   }
 
 };
