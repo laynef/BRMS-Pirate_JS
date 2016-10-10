@@ -20,7 +20,7 @@ var CreateCommand = function(name) {
     console.log("Raiding your project " + name);
 
     var src = path.join(__dirname, '..', '..', 'project', 'temp');
-    var dest = path.join(workingDirectory, name);
+    var dest = path.join(workDir, name);
 
     // copy project to new directory
     ncp(source, destination, function (err) {
