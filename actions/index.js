@@ -1,9 +1,19 @@
-/**
-* @Author: Layne Faler <laynefaler>
-* @Date:   10-10-2016
-* @Email:  laynefaler@gmail.com
-* @Last modified by:   laynefaler
-* @Last modified time: 10-10-2016
-*/
+#! /usr/bin/env node
 
-// delete header
+var StartUp = require('./startup/StartUp.js');
+
+var user = process.argv.slice(2);
+
+var args = [], flags = [];
+
+for (var i = 1; i < user.length; i++) {
+  if (user[i].indexOf('--') === 0) {
+    flags.push(user[i]);
+  } else {
+    args.push(user[i]);
+  }
+}
+
+var start = new StartUp(user[0], args, flags);
+
+start.execute();
