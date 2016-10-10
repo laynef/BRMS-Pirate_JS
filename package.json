@@ -21,5 +21,8 @@
   "preferGlobal": true,
   "bin": {
     "pirate": "./actions/commands/index.js"
+  },
+  "dependencies": {
+    "ncp": "^2.0.0"
   }
 }
