@@ -23,7 +23,7 @@ var CreateCommand = function(name) {
     var dest = path.join(workDir, name);
 
     // copy project to new directory
-    ncp(source, destination, function (err) {
+    ncp(src, dest, function (err) {
        if (err) {
          return console.error(err);
        }
