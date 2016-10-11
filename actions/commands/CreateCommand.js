@@ -32,7 +32,7 @@ var CreateCommand = function(name) {
       'name': ProjectName,
       'private': true,
       'scripts': {
-        'start': 'meteor run'
+        'start': ['meteor run', 'meteor npm install']
       },
       'dependencies' : {
         "meteor-node-stubs": "~0.2.0",
@@ -51,7 +51,7 @@ var CreateCommand = function(name) {
 
        // create package.json
        jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
-         console.error(er);
+         // should be null
        });
 
        console.log("Your rum is ready to go!");
