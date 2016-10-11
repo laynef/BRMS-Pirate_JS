@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-10-2016
+* @Last modified time: 10-11-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -13,21 +13,6 @@ var jsonfile = require('jsonfile');
 
 var CreateCommand = function(name) {
   var ProjectName = name;
-  var file = './' + ProjectName + '/package.json';
-
-  var obj = {
-    'name': ProjectName,
-    'private': true,
-    'scripts': {
-      'start': 'meteor run'
-    },
-    'dependencies' : {
-      "meteor-node-stubs": "~0.2.0",
-      "react": "^15.3.2",
-      "react-dom": "^15.3.2",
-      "react-router": "^2.8.1"
-    }
-  };
 
   var newProject = function() {
     var workDir = process.cwd();
@@ -49,6 +34,21 @@ var CreateCommand = function(name) {
        console.log('Your rum is brewing ...');
     });
 
+    var file = './package.json';
+
+    var obj = {
+      'name': ProjectName,
+      'private': true,
+      'scripts': {
+        'start': 'meteor run'
+      },
+      'dependencies' : {
+        "meteor-node-stubs": "~0.2.0",
+        "react": "^15.3.2",
+        "react-dom": "^15.3.2",
+        "react-router": "^2.8.1"
+      }
+    };
 
     jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
       console.error(er);
