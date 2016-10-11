@@ -8,8 +8,26 @@
 
 var ncp = require('ncp').ncp;
 var path = require('path');
+var jsonfile = require('jsonfile');
+
 
 var CreateCommand = function(name) {
+  var file = './package.json';
+
+  var obj = {
+    'name': this.name,
+    'private': true,
+    'scripts': {
+      'start': 'meteor run'
+    },
+    'dependencies' : {
+      "meteor-node-stubs": "~0.2.0",
+      "react": "^15.3.2",
+      "react-dom": "^15.3.2",
+      "react-router": "^2.8.1"
+    }
+  };
+
   var newProject = function() {
     var workDir = process.cwd();
     if (name === undefined || name === '' || name === null) {
@@ -27,8 +45,15 @@ var CreateCommand = function(name) {
        if (err) {
          return console.error(err);
        }
-       console.log('Your rum is ready to go');
+       console.log('Your rum is brewing ...');
     });
+
+    jsonfile.writeFile(file, obj, function (er) {
+      console.error(er);
+    });
+
+    console.log("Your rum is ready to go!");
+
 
   };
   return {
