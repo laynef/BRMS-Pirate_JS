@@ -26,15 +26,7 @@ var CreateCommand = function(name) {
     var src = path.join(__dirname, '..', '..', 'project', 'temp');
     var dest = path.join(workDir, name);
 
-    // copy project to new directory
-    ncp(src, dest, function (err) {
-       if (err) {
-         return console.error(err);
-       }
-       console.log('Your rum is brewing ...');
-    });
-
-    var file = './package.json';
+    var file = './' + name + '/package.json';
 
     var obj = {
       'name': ProjectName,
@@ -50,12 +42,20 @@ var CreateCommand = function(name) {
       }
     };
 
-    jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
-      console.error(er);
+    // copy project to new directory
+    ncp(src, dest, function (err) {
+       if (err) {
+         return console.error(err);
+       }
+       console.log('Your rum is brewing ...');
+
+       // create package.json
+       jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
+         console.error(er);
+       });
+
+       console.log("Your rum is ready to go!");
     });
-
-    console.log("Your rum is ready to go!");
-
 
   };
   return {
