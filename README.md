@@ -15,5 +15,3 @@
 `pirate create <project-name>`<br/>
 `cd <project-name>`<br/>
 `meteor`<br/>
-`open package.json`<br/>
-`replace the name` <br/>
