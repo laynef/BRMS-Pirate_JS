@@ -32,7 +32,7 @@ var CreateCommand = function(name) {
       'name': ProjectName,
       'private': true,
       'scripts': {
-        'start': ['meteor run', 'meteor npm install']
+        'start': 'meteor run'
       },
       'dependencies' : {
         "meteor-node-stubs": "~0.2.0",

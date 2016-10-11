@@ -14,4 +14,5 @@
 `pirate arr`<br/>
 `pirate create <project-name>`<br/>
 `cd <project-name>`<br/>
+`meteor npm install` <br/>
 `meteor`<br/>
