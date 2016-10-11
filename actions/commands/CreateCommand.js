@@ -12,10 +12,11 @@ var jsonfile = require('jsonfile');
 
 
 var CreateCommand = function(name) {
-  var file = './package.json';
+  var ProjectName = name;
+  var file = './' + ProjectName + '/package.json';
 
   var obj = {
-    'name': this.name,
+    'name': ProjectName,
     'private': true,
     'scripts': {
       'start': 'meteor run'
@@ -48,7 +49,8 @@ var CreateCommand = function(name) {
        console.log('Your rum is brewing ...');
     });
 
-    jsonfile.writeFile(file, obj, function (er) {
+
+    jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
       console.error(er);
     });
 
