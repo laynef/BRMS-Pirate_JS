@@ -1,3 +1,9 @@
+// @Author: Layne Faler <laynefaler>
+// @Date:   10-10-2016
+// @Email:  laynefaler@gmail.com
+// @Last modified by:   laynefaler
+// @Last modified time: 10-12-2016
+
 /* CSS declarations go here */
 
 @import "{wolves:bourbon}/bourbon";
@@ -6,8 +12,12 @@
 
 
 // delete below
-body {
-  background-color: rgb(76, 153, 215);
+html {
+  background: url('https://techandle.files.wordpress.com/2015/02/pirates-of-the-caribbean-on-stranger-tides-wallpaper.jpg?w=1200') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
