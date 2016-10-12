@@ -6,22 +6,18 @@
 * @Last modified time: 10-12-2016
 */
 
-import { Meteor } from "meteor/meteor";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, Link } from "react-router";
 
-import './main.html';
-import App from './app/App.jsx';
-
-var Main = React.createClass({
+var App = React.createClass({
   render: function() {
     return (
-      <App />
+      <div>
+        <h1>We Love You Hilary!</h1>
+      </div>
     );
   }
 });
 
-Meteor.startup(function(){
-  ReactDOM.render(<Main />, document.getElementById("app"));
-});
+module.exports = App;
