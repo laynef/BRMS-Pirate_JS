@@ -3,12 +3,13 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-11-2016
+* @Last modified time: 10-14-2016
 */
 
 var ncp = require('ncp').ncp;
 var path = require('path');
 var jsonfile = require('jsonfile');
+var exec = require('child_process').exec, child;
 
 
 var CreateCommand = function(name) {
@@ -38,7 +39,8 @@ var CreateCommand = function(name) {
         "meteor-node-stubs": "~0.2.0",
         "react": "^15.3.2",
         "react-dom": "^15.3.2",
-        "react-router": "^2.8.1"
+        "react-router": "^2.8.1",
+        "redux": "^3.6.0"
       }
     };
 
@@ -53,6 +55,12 @@ var CreateCommand = function(name) {
        jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
          // should be null
        });
+
+       child = exec('meteor npm install',
+        function (error, stdout, stderr) {
+          // should be null
+        });
+        child();
 
        console.log("Your rum is ready to go!");
     });

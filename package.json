@@ -1,6 +1,6 @@
 {
   "name": "brms-pirate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Basic React Meteor Setup. This is a meteor that set-ups a react project for you. New updates will continue has needed. This is the basic setup I use when making my react projects. Enjoy!",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,6 +28,7 @@
     "ncp": "^2.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^2.8.1"
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
   }
 }
