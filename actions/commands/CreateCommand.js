@@ -9,7 +9,6 @@
 var ncp = require('ncp').ncp;
 var path = require('path');
 var jsonfile = require('jsonfile');
-var exec = require('child_process').exec;
 
 
 var CreateCommand = function(name) {
@@ -55,12 +54,6 @@ var CreateCommand = function(name) {
        jsonfile.writeFile(file, obj, {spaces: 2}, function (er) {
          // should be null
        });
-
-       var child = exec('meteor npm install',
-        function (error, stdout, stderr) {
-          // should be null
-        });
-        child();
 
        console.log("Your rum is ready to go!");
     });
