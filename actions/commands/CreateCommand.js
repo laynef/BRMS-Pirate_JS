@@ -9,7 +9,7 @@
 var ncp = require('ncp').ncp;
 var path = require('path');
 var jsonfile = require('jsonfile');
-var exec = require('child_process').exec, child;
+var exec = require('child_process').exec;
 
 
 var CreateCommand = function(name) {
@@ -56,7 +56,7 @@ var CreateCommand = function(name) {
          // should be null
        });
 
-       child = exec('meteor npm install',
+       var child = exec('meteor npm install',
         function (error, stdout, stderr) {
           // should be null
         });
