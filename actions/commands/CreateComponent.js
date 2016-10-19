@@ -39,4 +39,4 @@ var ComponentCommand = function(name) {
   }
 };
 
-module.exports = CreateCommand;
+module.exports = ComponentCommand;
