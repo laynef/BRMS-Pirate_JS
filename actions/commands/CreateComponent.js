@@ -18,7 +18,7 @@ var ComponentCommand = function(name) {
       throw new Error('pirate component Name');
     }
 
-    console.log("Raiding your ship " + name);
+    console.log("Raiding your ship");
 
     var src = path.join(__dirname, '..', '..', 'project', 'component');
     var dest = path.join(workDir, 'client', 'app', 'components', name);
@@ -28,10 +28,9 @@ var ComponentCommand = function(name) {
        if (err) {
          return console.error(err);
        }
-       console.log('Digging up your gold ...');
+       console.log('Looting up your gold ...');
+       console.log("Your gold is ready to go!");
     });
-
-    console.log("Your gold is ready to go!");
 
   };
   return {
