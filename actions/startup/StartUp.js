@@ -25,7 +25,7 @@ var StartUp = function(commandPattern, args, flags) {
       case 'create':
         commanderInCharge(CreateCommand);
         break;
-      case 'component':
+      case 'make':
         commanderInCharge(CreateComponent);
         break;
       default:

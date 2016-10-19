@@ -19,7 +19,7 @@ var PrintDoc = function() {
     console.log("\n");
     console.log("BRMS-Pirate_JS - Version" + actionJson.version);
     console.log('├── create             ─ Create a new project');
-    console.log('├── component             ─ Create a new component');
+    console.log('├── make             ─ Create a new component');
     console.log('└── arr                ─ Verify that your crew can arr');
   };
   return {
