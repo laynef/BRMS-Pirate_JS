@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-14-2016
+* @Last modified time: 10-19-2016
 */
 
 import { Meteor } from "meteor/meteor";
@@ -12,7 +12,7 @@ import ReactDOM from "react-dom";
 import { Router, Route, Link, browserHistory } from "react-router";
 
 import './main.html';
-import App from './app/App.jsx';
+import App from './app/components/App.jsx';
 
 var Routes = React.createClass({
   render: function() {
