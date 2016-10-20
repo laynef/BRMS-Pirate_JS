@@ -12,6 +12,8 @@ var fs = require('fs');
 
 var ComponentCommand = function(name) {
 
+  var capitalName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+
   var newComponent = function() {
     var workDir = process.cwd();
     if (name === undefined || name === '' || name === null) {
@@ -24,7 +26,7 @@ var ComponentCommand = function(name) {
     var src = path.join(__dirname, '..', '..', 'project', 'component');
     var dest = path.join(workDir, 'client', 'app', 'components', name);
     var file = path.join(workDir, 'client', 'app', 'components', name, 'Component.jsx');
-    var newFile = path.join(workDir, 'client', 'app', 'components', name, name + '.jsx');
+    var newFile = path.join(workDir, 'client', 'app', 'components', name, capitalName + '.jsx');
 
     // copy project to new directory
     ncp(src, dest, function (err) {

@@ -1,7 +1,21 @@
+<!--
+@Author: Layne Faler <laynefaler>
+@Date:   10-14-2016
+@Email:  laynefaler@gmail.com
+@Last modified by:   laynefaler
+@Last modified time: 10-20-2016
+-->
+
 <head>
-  <title>rename-me</title>
+  <title id="web-top-title">rename-me</title>
 </head>
 
 <body>
   <div id="app"></div>
+
+  <script>
+    var pjson = require('./../package.json');
+    $('#web-top-title').text(pjson.name);
+  </script>
+
 </body>
