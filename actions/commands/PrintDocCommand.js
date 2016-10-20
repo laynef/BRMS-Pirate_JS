@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-19-2016
+* @Last modified time: 10-20-2016
 */
 
 var actionJson = require('../../package.json');
@@ -20,6 +20,7 @@ var PrintDoc = function() {
     console.log("BRMS-Pirate_JS - Version" + actionJson.version);
     console.log('├── create             ─ Create a new project');
     console.log('├── make               ─ Create a new component');
+    console.log('├── mkdir              ─ Create a new directory');
     console.log('└── arr                ─ Verify that your crew can arr');
   };
   return {

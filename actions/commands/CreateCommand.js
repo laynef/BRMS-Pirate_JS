@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-14-2016
+* @Last modified time: 10-20-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -38,6 +38,7 @@ var CreateCommand = function(name) {
         "meteor-node-stubs": "~0.2.0",
         "react": "^15.3.2",
         "react-dom": "^15.3.2",
+        "react-redux": "^4.4.5",
         "react-router": "^2.8.1",
         "redux": "^3.6.0"
       }
