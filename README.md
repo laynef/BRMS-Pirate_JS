@@ -3,7 +3,7 @@
 @Date:   10-10-2016
 @Email:  laynefaler@gmail.com
 @Last modified by:   laynefaler
-@Last modified time: 10-19-2016
+@Last modified time: 10-20-2016
 -->
 
 # README
@@ -28,4 +28,9 @@
 ### To add a component
 
 `cd <project-name>`<br/>
-`pirate component <component-name>`<br/>
+`pirate make <component-name>`<br/>
+
+### To add a directory
+
+`cd <project-name>`<br/>
+`pirate mkdir <component-name>`<br/>

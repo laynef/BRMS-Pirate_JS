@@ -35,6 +35,7 @@ var CreateCommand = function(name) {
         'start': 'meteor run'
       },
       'dependencies' : {
+        "jquery": "^3.1.1",
         "meteor-node-stubs": "~0.2.0",
         "react": "^15.3.2",
         "react-dom": "^15.3.2",

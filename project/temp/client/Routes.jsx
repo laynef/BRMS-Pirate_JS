@@ -14,6 +14,8 @@ import { Router, Route, Link, browserHistory } from "react-router";
 import './main.html';
 import App from './app/App.jsx';
 
+var pjson = require('./../package.json');
+
 var Routes = React.createClass({
   render: function() {
     return (
@@ -28,4 +30,5 @@ var Routes = React.createClass({
 
 Meteor.startup(function(){
   ReactDOM.render(<Routes />, document.getElementById("app"));
+  $('#web-top-title').text(pjson.name);
 });
