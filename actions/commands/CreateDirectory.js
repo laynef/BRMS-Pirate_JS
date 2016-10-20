@@ -8,6 +8,7 @@
 
 var ncp = require('ncp').ncp;
 var path = require('path');
+var fs = require('fs');
 
 var DirectoryCommand = function(name) {
 
