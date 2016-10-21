@@ -37,6 +37,18 @@ var ComponentCommand = function(name) {
 
        fs.rename(file, newFile);
 
+       // rename Main in Component.jsx
+       fs.readFile(newFile, function (err,data) {
+        if (err) {
+          return console.log(err);
+        }
+        var result = data.replace(/Main/g, capitalName);
+
+        fs.writeFile(newFile, result, function (err) {
+           if (err) return console.log(err);
+        });
+      });
+
        console.log("Your gold is ready to go!");
     });
 
