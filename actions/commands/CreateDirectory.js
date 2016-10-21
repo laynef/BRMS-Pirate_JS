@@ -38,13 +38,13 @@ var DirectoryCommand = function(name) {
        fs.rename(file, newFile);
 
        // rename Main in Component.jsx
-       fs.readFile(newFile, function (err,data) {
+       fs.readFile(newFile, 'utf8', function (err,data) {
         if (err) {
           return console.log(err);
         }
         var result = data.replace(/Main/g, capitalName);
 
-        fs.writeFile(newFile, result, function (err) {
+        fs.writeFile(newFile, result, 'utf8', function (err) {
            if (err) return console.log(err);
         });
       });
