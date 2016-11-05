@@ -35,7 +35,9 @@ var ComponentCommand = function(name) {
        }
        console.log('Looting up your gold ...');
 
-       fs.rename(file, newFile);
+       fs.rename(file, newFile, function(e) {
+         
+       });
 
        // rename Main in Component.jsx
        fs.readFile(newFile, 'utf8', function (err,data) {
