@@ -3,7 +3,7 @@
 * @Date:   10-20-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-20-2016
+* @Last modified time: 11-04-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -39,13 +39,11 @@ var DirectoryCommand = function(name) {
 
        // rename Main in Component.jsx
        fs.readFile(newFile, 'utf8', function (err,data) {
-        if (err) {
-          return console.log(err);
-        }
+
         var result = data.replace(/Main/g, capitalName);
 
         fs.writeFile(newFile, result, 'utf8', function (err) {
-           if (err) return console.log(err);
+           // null
         });
       });
 
