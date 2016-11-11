@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-20-2016
+* @Last modified time: 11-10-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -35,6 +35,7 @@ var CreateCommand = function(name) {
         'start': 'meteor run'
       },
       'dependencies' : {
+        "babel-runtime": "^6.18.0",
         "jquery": "^3.1.1",
         "meteor-node-stubs": "~0.2.0",
         "react": "^15.3.2",
